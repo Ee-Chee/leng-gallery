@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: 'Simonetta', serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/dark-sky-bg.jpeg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: 50%;
+}

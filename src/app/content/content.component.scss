@@ -1,0 +1,32 @@
+.background-container {
+    margin: 50px 15px 0;
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    position: relative;
+}
+
+.background-container:before {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-weight: bold;
+
+    text-shadow: rgb(0, 225, 255) 0px 0px 10px;
+}

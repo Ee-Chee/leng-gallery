@@ -1,0 +1,13 @@
+<div *ngIf="!isOpen; else test" [@closeStateAnimation] class="close" (click)="toggle()">
+    <img width="20px" height="20px" src="assets/bulb.gif">
+    <img width="50px" height="50px" [src]="routeData.themeIcon">
+</div>
+<ng-template #test>
+    <div class="open" [@openStateAnimation]>
+        <img [src]="routeData.chatImage">
+        <div class="chat-box">
+            Hi, greetings <span [innerHtml]="emoji"></span>!
+        </div>
+        <div class="cancel" (click)="toggle()">X</div>
+    </div>
+</ng-template>
